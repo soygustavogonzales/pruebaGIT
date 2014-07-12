@@ -5,3 +5,4 @@ au
 *.bak
 #directorio oculto,untracked directory 
 /ocultos
+*_.*
