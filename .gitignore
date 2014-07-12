@@ -3,6 +3,30 @@ ttu
 au
 *.log
 *.bak
+*.temp
+
 #directorio oculto,untracked directory 
 /ocultos
+
+#todos los archivos terminados(*) en _ con cualquier extension(.*) en cualquier carpeta o subcarpeta. Ej.: seviana_.txt o cualquiera_.dat
 *_.*
+
+#archivos .dat dentro de carpeta1, esto no afecta a las subcarpetas
+carpeta1/*.dat
+
+#archivos .kat dentro de carpeta1, esto no afecta a las subcarpetas
+carpeta1/*.kat
+
+#archivos .kat dentro de carpeta1/cualquiera_carpeta/
+carpeta1/**/*.kat
+
+#archivos con extension de tres caracteres donde la del medio sea "a", aplicado dentro de carpeta1/cualquiera_carpeta/cualquiera_carpeta/
+carpeta1/**/**/*.[a-z]a[a-z]
+
+#archivos con extension de tres caracteres donde la del medio sea "a",aplicado dentro de carpeta1/cualquiera_carpeta/
+carpeta1/**/*.[a-z]a[a-z]
+
+#archivos con extension de tres caracteres donde la del medio sea "a",aplicado dentro de carpeta1/
+carpeta1/*.[a-z]a[a-z]
+
+carpeta1/*.nada
